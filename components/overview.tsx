@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { MessageIcon } from "./icons";
 import { LogoPython } from "@/app/icons";
-import FavIcon from "../app/favicon.ico";
 
 export const Overview = () => {
   return (
@@ -19,7 +18,7 @@ export const Overview = () => {
         <p className="flex flex-row items-center justify-center gap-4">
           <LogoPython size={32} />
           <span>+</span>
-          <img src={FavIcon} className='w-8'/>
+          <img src="../app/favicon.ico" className='w-8'/>
         </p>
         <p>
           This is an{" "}
