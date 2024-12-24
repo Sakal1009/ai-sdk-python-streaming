@@ -32,7 +32,7 @@ export const Overview = () => {
           template that demonstrates the usage of{" "}
             Data Stream Protocol
           {" "}
-          to stream chat completions from a Python function using
+          to stream chat completions from a Python function using{" ("}
           <Link
             className="font-medium underline underline-offset-4"
             href="https://fastapi.tiangolo.com"
