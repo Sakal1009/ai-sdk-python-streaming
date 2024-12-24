@@ -22,8 +22,7 @@ export const Navbar = () => {
         </Link>
         <Link href="https://proofofme.fun">
           <Button>
-            <HomeIcon />
-            Back to Web
+            <HomeIcon size={16}/> Back to Web
           </Button>
         </Link>
       </div>
