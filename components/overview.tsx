@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { MessageIcon } from "./icons";
 import { LogoPython } from "@/app/icons";
+import FavIcon from "../app/favicon.ico";
 
 export const Overview = () => {
   return (
@@ -14,11 +15,11 @@ export const Overview = () => {
       exit={{ opacity: 0, scale: 0.98 }}
       transition={{ delay: 0.5 }}
     >
-      <div className="rounded-xl p-6 flex flex-col gap-8 leading-relaxed text-center max-w-xl">
-        <p className="flex flex-row justify-center gap-4 items-center">
+      <div className="flex flex-col max-w-xl gap-8 p-6 leading-relaxed text-center rounded-xl">
+        <p className="flex flex-row items-center justify-center gap-4">
           <LogoPython size={32} />
           <span>+</span>
-          <MessageIcon size={32} />
+          <img src={FavIcon} className='w-8'/>
         </p>
         <p>
           This is an{" "}
@@ -30,23 +31,18 @@ export const Overview = () => {
             open source
           </Link>{" "}
           template that demonstrates the usage of{" "}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs/ai-sdk-ui/stream-protocol#data-stream-protocol"
-            target="_blank"
-          >
             Data Stream Protocol
-          </Link>{" "}
-          to stream chat completions from a Python function (
+          {" "}
+          to stream chat completions from a Python function using
           <Link
             className="font-medium underline underline-offset-4"
             href="https://fastapi.tiangolo.com"
             target="_blank"
           >
-            FastAPI
+            the PoM unified API
           </Link>
-          ) along with the
-          <code className="rounded-md bg-muted px-1 py-0.5">useChat</code> hook
+          ) along with 
+          <code className="rounded-md bg-muted px-1 py-0.5">theuseChat</code> hook
           on the client to create a seamless chat experience.
         </p>
         <p>
