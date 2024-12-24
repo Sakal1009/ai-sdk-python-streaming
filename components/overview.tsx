@@ -40,7 +40,7 @@ export const Overview = () => {
           >
             the PoM unified API
           </Link>
-          ) along with 
+          ) along with{" "} 
           <code className="rounded-md bg-muted px-1 py-0.5">theuseChat</code> hook
           on the client to create a seamless chat experience.
         </p>
