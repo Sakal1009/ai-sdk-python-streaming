@@ -44,17 +44,6 @@ export const Overview = () => {
           <code className="rounded-md bg-muted px-1 py-0.5">theuseChat</code> hook
           on the client to create a seamless chat experience.
         </p>
-        <p>
-          You can learn more about the AI SDK by visiting the{" "}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs"
-            target="_blank"
-          >
-            docs
-          </Link>
-          .
-        </p>
       </div>
     </motion.div>
   );
